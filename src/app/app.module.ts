@@ -13,7 +13,7 @@ import { SafeurlPipe } from './dynamic-content/safeurl.pipe';
     SafeurlPipe,
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     HttpClientModule,
     AppRoutingModule
   ],
