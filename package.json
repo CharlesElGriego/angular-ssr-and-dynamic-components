@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "build:client-app:prod": "ng build --prod",
-    "build:server-app:prod": "ng run angular-universal-course:server",
+    "build:server-app:prod": "ng run angular8-dynamic-components:server",
     "start": "ng serve --aot",
     "json-server": "json-server --watch db.json",
     "build": "ng build",
