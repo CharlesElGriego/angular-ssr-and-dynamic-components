@@ -6,6 +6,7 @@
     "build:client-app:prod": "npx ng build --prod",
     "build:server-app:prod": "npx ng run angular8-dynamic-components:server",
     "start:express-server": "ts-node -P ./server.tsconfig.json ./server.ts",
+    "start:ssr": "npm run build:client-app:prod && npm run build:server-app:prod && npm run start:express-server",
     "start": "npx ng serve --aot",
     "json-server": "json-server --watch db.json",
     "build": "npx ng build",
