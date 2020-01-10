@@ -3,15 +3,16 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "build:client-app:prod": "ng build --prod",
-    "build:server-app:prod": "ng run angular8-dynamic-components:server",
+    "build:client-app:prod": "npx ng build --prod",
+    "build:server-app:prod": "npx ng run angular8-dynamic-components:server",
     "start:express-server": "ts-node -P ./server.tsconfig.json ./server.ts",
-    "start": "ng serve --aot",
+    "start": "npx ng serve --aot",
     "json-server": "json-server --watch db.json",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+    "build": "npx ng build",
+    "test": "npx ng test",
+    "lint": "npx ng lint --format=stylish",
+    "lint-fix": "npx ng lint --fix=true",
+    "e2e": "npx ng e2e"
   },
   "private": true,
   "dependencies": {
