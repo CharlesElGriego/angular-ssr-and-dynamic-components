@@ -2,19 +2,34 @@
 
 Simple project for creating Angular Dynamic Components with The Ahead-of-Time (AOT) compiler.
 
-## Run app 
-npm start;
-npm run json-server;
 
-## For SSR
-Open a console and do the following steps: 
+## Installation
+```sh
+npm i
+```
 
-1.npm run build:client-app:prod
 
-2.npm run build:server-app:prod
+## Run app local
+In two separate terminals
 
-3.npm run start:express-server
+```sh
+npm start
+```
 
-On another console: 
+and
+```sh
+npm run json-server
+```
 
-1.npm run json-server
+## Run the app on SSR mode 
+
+In two separate terminals
+
+```sh
+npm run start:ssr
+```
+
+and
+```sh
+npm run json-server
+```
