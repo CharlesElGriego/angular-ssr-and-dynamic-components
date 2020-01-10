@@ -2,20 +2,25 @@ import { HttpClientModule } from '@angular/common/http';
 import { Compiler, CompilerFactory, COMPILER_OPTIONS, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { JitCompilerFactory } from '@angular/platform-browser-dynamic';
+import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SafeurlPipe } from './dynamic-content/safeurl.pipe';
+import { CoreModule } from './core/core.module';
+import { PipesModule } from './shared/pipes';
+import { SafeurlPipe } from './shared/pipes/safeurl.pipe';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    SafeurlPipe,
   ],
   imports: [
+    AppRoutingModule,
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     HttpClientModule,
-    AppRoutingModule
+    RouterModule,
+    CoreModule,
+    PipesModule
   ],
   providers: [SafeurlPipe,
     // Compiler is not included in AOT-compiled bundle.
