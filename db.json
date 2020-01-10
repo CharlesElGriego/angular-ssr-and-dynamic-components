@@ -1,10 +1,38 @@
 {
+  "users": [
+    {
+      "id": "1",
+      "name": "Bruce ",
+      "lastName": "Wayne"
+    },
+    {
+      "name": "Peter ",
+      "lastName": "Parker",
+      "id": "2"
+    },
+    {
+      "name": "Charles",
+      "lastName": "El Griego",
+      "id": "3"
+    },
+    {
+      "name": "Clark",
+      "lastName": "Kent",
+      "id": "4"
+    }
+  ],
   "user": {
-    "firstName": "Charles",
-    "lastName": "El Griego",
-    "id": 1000
+    "id": "1",
+    "name": "Bruce ",
+    "lastName": "Wayne"
   },
-  "html": {
+  "content-admin": {
     "content": " <div> <p> {{user?.firstName}}  {{user?.lastName}} </p> <button class='button-color' (click)='clickMe()'>Click Me! </button> </div>   <div *ngIf='showText'> <p> You clicked the button!</p></div> "
+  },
+  "layout-header": {
+    "content": "<div class='layout-header'>  <button (click)='goToAdmin()'>    <h3>Admin</h3>  </button>   <button (click)='goToPets()'>    <h3>Pets</h3>  </button> <button (click)='goToUsers()'>    <h3>Users</h3>  </button></div>"
+  },
+  "layout-footer": {
+    "content": ""
   }
 }
