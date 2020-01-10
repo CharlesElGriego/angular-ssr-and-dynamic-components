@@ -1,0 +1,11 @@
+ .layout-header {
+   padding: 5px;
+   text-align: center;
+   background: #1abc9c;
+   color: white;
+   display: flex;
+ }
+
+ .layout-header button {
+   flex: 33%;
+ }
