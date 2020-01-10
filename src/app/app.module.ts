@@ -15,7 +15,7 @@ import { SafeurlPipe } from './shared/pipes/safeurl.pipe';
   declarations: [AppComponent, NoSSRDirective],
   imports: [
     AppRoutingModule,
-    BrowserModule.withServerTransition({ appId: "serverApp" }),
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     HttpClientModule,
     RouterModule,
     CoreModule,
