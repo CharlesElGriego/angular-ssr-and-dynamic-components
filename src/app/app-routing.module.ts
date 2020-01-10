@@ -4,8 +4,12 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'test',
-    loadChildren: () => import('./dynamic-content/dynamic-content.module').then(m => m.DynamicContentModule)
+    path: 'users',
+    loadChildren: () => import('./modules/users/users.module').then(module => module.UsersModule)
+  },
+  {
+    path: 'pets',
+    loadChildren: () => import('./modules/pets/pets.module').then(module => module.PetsModule)
   }
 ];
 
