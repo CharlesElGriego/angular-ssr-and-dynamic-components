@@ -3,7 +3,8 @@
   <h1>Welcome to {{ title }}!</h1>
 </div>
 
-<ng-container *noSSR>
+<ng-container *appNoSSR>
   <app-header></app-header>
-  <router-outlet></router-outlet>
 </ng-container>
+
+<router-outlet></router-outlet>
