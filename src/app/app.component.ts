@@ -25,7 +25,7 @@ export class AppComponent implements OnInit, OnDestroy {
 
   //#region   Lifecycle Hooks
   ngOnInit(): void {
-    this.resizeSubscription = this.resizeService.windowSize$
+    this.resizeSubscription = this.resizeService.window$
       .subscribe(size => console.log(size));
     this.serverService.getUsers().subscribe(users => this.serverService.users$.next(users));
   }
