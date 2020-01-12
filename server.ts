@@ -8,6 +8,14 @@ import 'zone.js/dist/zone-node';
 
 const { AppServerModuleNgFactory, LAZY_MODULE_MAP } = require('./dist-server/main');
 
+const domino = require('domino');
+const fs = require('fs');
+const template = fs.readFileSync('dist/index.html').toString();
+const window = domino.createWindow(template);
+
+// tslint:disable-next-line:no-string-literal
+global['window'] = window;
+
 enableProdMode();
 
 const app = express();
